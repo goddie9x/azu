@@ -1,0 +1,245 @@
+/*=============================DEFAULT============================*/
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*=============================USEABLE============================*/
+
+.title_section {
+    text-align: center;
+    margin: 34px auto;
+    font-size: 24px;
+    color: #222222;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eeeeee;
+    position: relative;
+}
+
+.title_section::after {
+    position: absolute;
+    width: 80px;
+    content: '';
+    background-color: #ff5722;
+    height: 2px;
+    left: calc(50% - 40px);
+    bottom: -2px;
+}
+
+
+/*=============================HEADER============================*/
+
+.header {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.header_top {
+    border-bottom: 1px solid #fff;
+}
+
+.header_top .row {
+    height: 35px;
+}
+
+.jeader_search .input-group-text {
+    background-color: #ff2722;
+    color: #fff;
+}
+
+.header_middle--ext>a {
+    background-color: #faa900;
+    height: 42px;
+    border-radius: 8px;
+    width: 155px;
+    color: #fff;
+}
+
+.ext_content-title {
+    font-size: 15px;
+}
+
+.ext_content-modify {
+    font-size: 12px;
+}
+
+.header_bottom {
+    height: 55px;
+    background-color: #191919;
+    text-transform: uppercase;
+}
+
+.header_bottom a {
+    color: #fff;
+}
+
+.header_bottom .navbar {
+    padding: 0;
+}
+
+.header_bottom .nav-item {
+    width: 150px;
+    text-align: center;
+}
+
+.catalogue {
+    height: 55px;
+    width: 312px;
+    line-height: 55px;
+    text-align: center;
+    background-color: #fd4a12;
+}
+
+.catalogue .dropdown-menu {
+    width: 100%;
+    background-color: #fd4a12;
+    line-height: 35px;
+}
+
+
+/*==============================BANNER_MAIN===========================*/
+
+.banner_main img {
+    height: 405px;
+    width: 100%;
+}
+
+
+/*============================SERVICE=============================*/
+
+.service {
+    background-color: #f3f3f3;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+
+.service_item--img {
+    width: 40px;
+}
+
+.service_item--img.longer {
+    width: 50px;
+}
+
+.service_item--img.smaller {
+    width: 36px;
+}
+
+.service_detail--title {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.service_detail--content {
+    color: 888888;
+    font-size: 12px;
+}
+
+
+/*============================DEALS=============================*/
+
+.big_deal {
+    display: block;
+}
+
+.big_deal .nav-link {
+    margin-left: 6px;
+    margin-right: 6px;
+    min-width: 150px;
+    background-color: #eeeeee;
+    border-radius: 100px;
+    color: #222222;
+}
+
+.big_deal .nav-link.active {
+    background-color: #fd4a12;
+    color: #fff;
+}
+
+.all_product--hot {
+    position: relative;
+}
+
+.list_product--hot {
+    position: absolute;
+    top: 0;
+}
+
+.product_item {
+    position: relative;
+}
+
+.product_item:hover {
+    box-shadow: 1px 1px 4px #eeeeee;
+    transform: scale(110%);
+}
+
+.product_image {
+    height: 225px;
+}
+
+.sale {
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    background-color: #ed3f46;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+}
+
+.product_name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+    height: 45px;
+    line-height: 20px;
+}
+
+.product_item .price {
+    color: #ea2227;
+    text-align: center;
+}
+
+
+/*============================ADS=============================*/
+
+.ads {
+    margin-top: 350px;
+    height: 230px;
+}
+
+.ads_img {
+    height: 230px;
+    width: 100%;
+}
+
+
+/*=========================================================*/
+
+
+/*=========================================================*/
+
+
+/*=========================================================*/
+
+
+/*=========================================================*/
+
+
+/*=========================================================*/
+
+
+/*=========================================================*/

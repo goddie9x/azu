@@ -122,9 +122,12 @@ a {
 
 .service {
     background-color: #f3f3f3;
-    height: 104px;
     display: flex;
     align-items: center;
+}
+
+.service_item {
+    padding: 30px;
 }
 
 .service_item--img {
@@ -218,13 +221,13 @@ a {
 .product_item .price {
     color: #ea2227;
     text-align: center;
+    height: 40px;
 }
 
 
 /*============================ADS=============================*/
 
 .ads {
-    height: 230px;
     margin-top: 30px;
 }
 
@@ -276,16 +279,13 @@ a {
 }
 
 .funiture_arc--nav {
+    justify-content: space-between;
     margin-top: 15px;
     margin-right: 15px;
-    height: 40px;
     background-color: #f7f7f7;
 }
 
-.view_all {
-    position: absolute;
-    right: 15px;
-}
+.view_all {}
 
 .view_all a {
     color: #101010;
@@ -304,7 +304,7 @@ a {
 }
 
 .ads_img--left {
-    height: 290px;
+    height: 100%;
 }
 
 
@@ -345,7 +345,7 @@ a {
     font-size: 14px;
     color: #666666;
     height: 84px;
-    line-height: 26px;
+    line-height: 20px;
     overflow: hidden;
     margin-bottom: 0;
 }
@@ -370,7 +370,6 @@ a {
 
 .footer_top {
     background-color: #ff5722;
-    height: 60px;
     line-height: 60px;
     color: #fff;
 }
@@ -447,6 +446,11 @@ a {
     line-height: 27px;
 }
 
+.main_footer--bottom .input-group-text {
+    background-color: #ff2722;
+    color: #fff;
+}
+
 .footer_desc {
     padding-left: 40px;
     position: relative;
@@ -478,4 +482,47 @@ a {
 }
 
 
-/*=========================================================*/
+/*============================RESPOSIVE=============================*/
+
+@media (min-width: 992px) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 98%;
+    }
+}
+
+@media(max-width:1100px) {
+    .header_bottom .nav-item {
+        width: 140px;
+    }
+    .ext_content-modify {
+        font-size: 11px;
+    }
+    .banner_main img {
+        height: 330px;
+    }
+    .catalogue {
+        width: 250px;
+    }
+    .product_image {
+        height: 215px;
+    }
+    .product_grid .product_image {
+        height: 165px;
+    }
+    .news_item img {
+        height: 165px;
+    }
+    .reg_title {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:767px) {
+    .ads_item {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

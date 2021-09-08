@@ -406,10 +406,11 @@ a {
     display: block;
     line-height: 25px;
     border-radius: 5px;
-    position: absolute;
+    position: sticky;
     text-align: center;
     top: 0;
     left: 0;
+    z-index: 999999;
     cursor: pointer;
 }
 
@@ -473,6 +474,10 @@ a {
     color: #fff;
     background-color: #fb3f40;
     border: 1px solid #fb3f40;
+}
+
+.products_opts * {
+    cursor: pointer;
 }
 
 .products_opts .product_grid {

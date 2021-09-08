@@ -715,6 +715,13 @@ a {
     .header_bottom {
         height: 0;
     }
+    .main_menu .navbar-nav {
+        position: fixed;
+        right: 95px;
+        background-color: #666666;
+        border-radius: 10px;
+        top: 95px;
+    }
     .products_opts {
         display: none
     }

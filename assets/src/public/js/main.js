@@ -136,3 +136,4 @@ function fixedHeader(elements, breakpoint, classAdd = "fixed-top", elementDepend
         console.error('first argument must be exiting');
     }
 }
+new WOW().init();

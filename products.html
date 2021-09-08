@@ -8,6 +8,7 @@
     <link rel='shortcut icon' type='image/x-icon' href='./assets/src/public/img/favicon-32x32.png' />
     <title>F web</title>
     <link rel="stylesheet" href="./assets/src/vendors/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/src/vendors/css/animate.css">
     <link rel="stylesheet" href="./assets/src/vendors/css/all.css">
     <link rel="stylesheet" href="./assets/src/vendors/css/owl.carousel.css">
     <link rel="stylesheet" href="./assets/src/public/css/style.css">
@@ -16,7 +17,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header_top ">
+            <div class="header_top wow fadeInLeft">
                 <div class="container">
                     <div class="row  justify-content-between flex-row align-items-center">
                         <div class="header_top--left col-4">
@@ -53,10 +54,10 @@
                     </div>
                 </div>
             </div>
-            <div class="header_middle">
+            <div class="header_middle  wow fadeInRight">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-3 col-2 logo">
+                        <div class="col-lg-3 col-4 logo">
                             <img src="./assets/src/public/img/logo.png" alt="" class="logo--img">
                         </div>
                         <div class="col-lg-5 col-md-4 d-none d-lg-block jeader_search">
@@ -81,14 +82,17 @@
                                 </div>
                             </a>
                         </div>
+                        <button class="col-auto navbar-toggler main_menu--toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "><i class="far fa-bars"></i></span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="header_bottom">
+            <div class="header_bottom  wow fadeInLeft">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg ">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="container-fluid align-items-center">
+                            <div class="collapse navbar-collapse main_menu" id="main_nav">
                                 <ul class="navbar-nav me-auto align-items-center">
                                     <li class="catalogue dropdown">
                                         <div class="catalogue-button " role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,214 +127,26 @@
             </div>
         </header>
         <main>
-            <section class="banner_main owl-carousel">
-                <img src="./assets/src/public/img/banner_main-1.png" alt="banner main" class="item">
-                <img src="./assets/src/public/img/banner_main-2.png" alt="banner main" class="item">
-            </section>
-            <section class="service">
+            <section class="bread_crumb  wow fadeInLeft">
                 <div class="container">
-                    <div class="row align-content-center">
-                        <div class="col-lg-3 col-sm-6 col-12 service_item d-flex align-items-center">
-                            <img class="col-3 service_item--img longer me-3" src="./assets/src/public/img/service_img_1.png"></img>
-                            <div class="service_detail">
-                                <div class="service_detail--title">Giao hàng trong 24 giờ</div>
-                                <div class="service_detail--content">Với đơn hàng trên 500.000 đ</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-12 service_item d-flex align-items-center">
-                            <img class="col-3 service_item--img me-3" src="./assets/src/public/img/service_img_2.png"></img>
-                            <div class="service_detail">
-                                <div class="service_detail--title">Đảm bảo chất lượng</div>
-                                <div class="service_detail--content">Sản phẩm đảm bảo chất lượng</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-12 service_item d-flex align-items-center">
-                            <img class="col-3 service_item--img me-3" src="./assets/src/public/img/service_img_3.png"></img>
-                            <div class="service_detail">
-                                <div class="service_detail--title">Hỗ trợ 24/7</div>
-                                <div class="service_detail--content">Hotline: 0123 456 789</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-12 service_item d-flex align-items-center">
-                            <img class="col-3 service_item--img smaller me-3" src="./assets/src/public/img/service_img_4.png"></img>
-                            <div class="service_detail">
-                                <div class="service_detail--title">Sản phẩm chính hãng</div>
-                                <div class="service_detail--content">Sản phẩm nhập khẩu chính hãng</div>
-                            </div>
-                        </div>
-                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-3">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
                 </div>
             </section>
-            <div class="clearfix"></div>
-            <section class="big_deal">
-                <div class="container">
-                    <h2 class="title_section">
-                        Deal nổi bật
-                    </h2>
-                    <div class="row">
-                        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-top-10-tab" data-bs-toggle="pill" data-bs-target="#pills-top-10" type="button" role="tab" aria-controls="pills-top-10" aria-selected="true">Top 10</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-funiture" type="button" role="tab" aria-controls="pills-funiture" aria-selected="false">Nội thất</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-decorate" type="button" role="tab" aria-controls="pills-decorate" aria-selected="false">Trang trí</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content all_product--hot" id="pills-tabContent">
-                            <div class="tab-pane list_product--hot fade show active owl-carousel" id="pills-top-10" role="tabpanel" aria-labelledby="pills-top-10-tab">
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-2.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale"></div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-3.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-4.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale"></div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-5.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="tab-pane list_product--hot fade owl-carousel" id="pills-funiture" role="tabpanel" aria-labelledby="pills-funiture-tab">
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-2.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale"></div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-3.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-4.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale"></div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-5.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                            </div>
-                            <div class="tab-pane list_product--hot fade owl-carousel" id="pills-decorate" role="tabpanel" aria-labelledby="pills-decorate-tab">
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-2.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale"></div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-3.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-4.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale"></div>
-                                </a>
-                                <a class="card product_item" href="./detail.html">
-                                    <img src="./assets/src/public/img/hot_product-5.png" class="card-img-top product_image" alt="product image">
-                                    <div class="card-body">
-                                        <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                        <div class="price">1.650.000đ</div>
-                                    </div>
-                                    <div class="sale">12%</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <section class="banner_top wow slideInLeft">
+                <div class="container banner_main owl-carousel">
+                    <img src="./assets/src/public/img/banner_main-1.png" alt="banner main" class="item">
+                    <img src="./assets/src/public/img/banner_main-2.png" alt="banner main" class="item">
                 </div>
             </section>
-            <div class="clearfix"></div>
-            <section class="ads">
-                <div class="container">
-                    <div class="row">
-                        <a href="./detail" class="ads_item col-12 col-md-6">
-                            <img src="./assets/src/public/img/ads_img-1.png" class="ads_img" alt="">
-                        </a>
-                        <a href="./detail" class="ads_item col-12 col-md-6">
-                            <img src="./assets/src/public/img/ads_img-2.png" class="ads_img" alt="">
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="funiture_arc family_fur product_section--type2">
+            <section class="funiture_arc wow slideInRight family_fur product_section--type2">
                 <div class="container">
                     <div class="row">
                         <ul class="nav nav-pills mb-3 funiture_arc--nav align-items-center" id="pills-tab" role="tablist">
-                            <li class="nav-item title_type--2">
-                                Nội thất gia đình
-                            </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#product_grid--1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Combo nột
                                     thất</button>
@@ -362,6 +178,10 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show  active" id="product_grid--1" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="row">
+                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
+                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
+                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                    </div>
                                     <div class="col-lg-9 col-12 product_grid row">
                                         <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
                                             <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
@@ -427,15 +247,79 @@
                                             </div>
                                             <div class="sale">12%</div>
                                         </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show " id="product_grid--2" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade show" id="product_grid--2" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="row">
+                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
+                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
+                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                    </div>
                                     <div class="col-lg-9 col-12 product_grid row">
                                         <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
                                             <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
@@ -501,15 +385,79 @@
                                             </div>
                                             <div class="sale">12%</div>
                                         </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show " id="product_grid--3" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade show" id="product_grid--3" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="row">
+                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
+                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
+                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                    </div>
                                     <div class="col-lg-9 col-12 product_grid row">
                                         <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
                                             <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
@@ -575,15 +523,79 @@
                                             </div>
                                             <div class="sale">12%</div>
                                         </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show " id="product_grid--4" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade show" id="product_grid--4" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="row">
+                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
+                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
+                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                    </div>
                                     <div class="col-lg-9 col-12 product_grid row">
                                         <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
                                             <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
@@ -649,15 +661,79 @@
                                             </div>
                                             <div class="sale">12%</div>
                                         </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show " id="product_grid--5" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade show" id="product_grid--5" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="row">
+                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
+                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
+                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                    </div>
                                     <div class="col-lg-9 col-12 product_grid row">
                                         <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
                                             <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
@@ -723,15 +799,79 @@
                                             </div>
                                             <div class="sale">12%</div>
                                         </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show " id="product_grid--6" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade show" id="product_grid--6" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="row">
+                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
+                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
+                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                    </div>
                                     <div class="col-lg-9 col-12 product_grid row">
                                         <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
                                             <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
@@ -797,10 +937,70 @@
                                             </div>
                                             <div class="sale">12%</div>
                                         </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_img_left-1.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_img_left-2.png" class="ads_img--left w-100" alt="ads left">
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
+                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
+                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
+                                            <div class="card-body">
+                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
+                                                <div class="price">1.650.000đ</div>
+                                            </div>
+                                            <div class="sale">12%</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -808,567 +1008,159 @@
                     </div>
                 </div>
             </section>
-            <section class="funiture_arc stow_fur product_section--type2">
-                <div class="container">
-                    <div class="row">
-                        <ul class="nav nav-pills mb-3 funiture_arc--nav align-items-center" id="pills-tab" role="tablist">
-                            <li class="nav-item title_type--2">
-                                Nộit thất gia đình
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#product_grid--21" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Combo nội
-                                    thất</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#product_grid--22" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Dụng cụ
-                                    gỗ</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#product_grid--23" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Đèn trang
-                                    trí</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#product_grid--24" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Độc đáo mới
-                                    lạ</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#product_grid--25" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Nội thất
-                                    xếp gỗ</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#product_grid--26" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Nội thất
-                                    gỗ</button>
-                            </li>
-                            <li class="nav-item view_all">
-                                <a href="./product.html" class="nav-link">Xem thêm</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show  active" id="product_grid--21" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-lg-9 col-12 product_grid row">
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_right--3.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_right--4.png" class="ads_img--left w-100" alt="ads left">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show " id="product_grid--22" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-lg-9 col-12 product_grid row">
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_right--3.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_right--4.png" class="ads_img--left w-100" alt="ads left">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show " id="product_grid--23" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-lg-9 col-12 product_grid row">
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_right--3.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_right--4.png" class="ads_img--left w-100" alt="ads left">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show " id="product_grid--24" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-lg-9 col-12 product_grid row">
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_right--3.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_right--4.png" class="ads_img--left w-100" alt="ads left">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show " id="product_grid--25" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-lg-9 col-12 product_grid row">
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_right--3.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_right--4.png" class="ads_img--left w-100" alt="ads left">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show " id="product_grid--26" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-lg-9 col-12 product_grid row">
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-1.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-2.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-3.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-4.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-5.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-6.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-7.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                        <a class="card product_item col-md-3 col-sm-6 col-12" href="./detail.html">
-                                            <img src="./assets/src/public/img/product_stow-8.png" class="card-img-top product_image" alt="product image">
-                                            <div class="card-body">
-                                                <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)</h3>
-                                                <div class="price">1.650.000đ</div>
-                                            </div>
-                                            <div class="sale">12%</div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column">
-                                        <img src="./assets/src/public/img/ads_right--3.png" class="ads_img--left w-100" alt="ads left">
-                                        <img src="./assets/src/public/img/ads_right--4.png" class="ads_img--left w-100" alt="ads left">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="big_ads mt-5">
-                <div class="container">
-                    <img src="./assets/src/public/img/big_ads.png" alt="big ads" class="w-100">
-                </div>
-            </section>
-            <section class="news">
+            <section class="big_deal wow slideInLeft">
                 <div class="container">
                     <h2 class="title_section">
-                        Tin mới nhất
+                        Sản phẩm đã xem
                     </h2>
-                    <div class="news_container owl-carousel">
-                        <a href="news.html" class="card news_item">
-                            <img src="./assets/src/public/img/news_img--1.png" class="card-img-top" alt="news image">
-                            <div class="card-body">
-                                <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
-                                <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
+                    <div class="row">
+                        <div class="tab-pane list_product--hot fade show active owl-carousel" id="pills-top-10" role="tabpanel" aria-labelledby="pills-top-10-tab">
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
                                 </div>
-                                <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
-                            </div>
-                        </a>
-                        <a href="news.html" class="card news_item">
-                            <img src="./assets/src/public/img/news_img--2.png" class="card-img-top" alt="news image">
-                            <div class="card-body">
-                                <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
-                                <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
+                                <div class="sale">12%</div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-2.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
                                 </div>
-                                <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
-                            </div>
-                        </a>
-                        <a href="news.html" class="card news_item">
-                            <img src="./assets/src/public/img/news_img--3.png" class="card-img-top" alt="news image">
-                            <div class="card-body">
-                                <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
-                                <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
+                                <div class="sale"></div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-3.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
                                 </div>
-                                <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
-                            </div>
-                        </a>
-                        <a href="news.html" class="card news_item">
-                            <img src="./assets/src/public/img/news_img--4.png" class="card-img-top" alt="news image">
-                            <div class="card-body">
-                                <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
-                                <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
+                                <div class="sale">12%</div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-4.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
                                 </div>
-                                <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="partners">
-                <div class="container">
-                    <div class="partners_slide owl-carousel">
-                        <div class="partner_item">
-                            <img src="./assets/src/public/img/partner_img--1.png" alt="parner image" class="partner_item--img">
+                                <div class="sale"></div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-5.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale">12%</div>
+                            </a>
                         </div>
-                        <div class="partner_item">
-                            <img src="./assets/src/public/img/partner_img--2.png" alt="parner image" class="partner_item--img">
+                        <div class="tab-pane list_product--hot fade owl-carousel" id="pills-funiture" role="tabpanel" aria-labelledby="pills-funiture-tab">
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale">12%</div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-2.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale"></div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-3.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale">12%</div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-4.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale"></div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-5.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale">12%</div>
+                            </a>
                         </div>
-                        <div class="partner_item">
-                            <img src="./assets/src/public/img/partner_img--3.png" alt="parner image" class="partner_item--img">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/src/public/img/partner_img--4.png" alt="parner image" class="partner_item--img">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/src/public/img/partner_img--5.png" alt="parner image" class="partner_item--img">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/src/public/img/partner_img--6.png" alt="parner image" class="partner_item--img">
+                        <div class="tab-pane list_product--hot fade owl-carousel" id="pills-decorate" role="tabpanel" aria-labelledby="pills-decorate-tab">
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/product_fam-1.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale">12%</div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-2.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale"></div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-3.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale">12%</div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-4.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale"></div>
+                            </a>
+                            <a class="card product_item" href="./detail.html">
+                                <img src="./assets/src/public/img/hot_product-5.png" class="card-img-top product_image" alt="product image">
+                                <div class="card-body">
+                                    <h3 class="card-title product_name text-center"> 360 Luxury Furniture Design dw725r (373w-150mm)
+                                    </h3>
+                                    <div class="price">1.650.000đ</div>
+                                </div>
+                                <div class="sale">12%</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="footer_top">
+            <div class="footer_top wow slideOutLeft ">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-3 col-12 reg_title">Dăng ký nhắn tin</div>
@@ -1408,19 +1200,21 @@
                     </div>
                 </div>
             </div>
-            <div class="main_footer">
+            <div class="main_footer wow slideOutRight">
                 <div class="container">
                     <div class="main_footer--above">
                         <div class="row">
                             <div class="col-lg-5 col-12 common_contact text-center">
                                 <h3 class="footer_title">CÔNG TY TNHH THƯƠNG MẠI TUẤN ANH</h3>
-                                <div class="footer_des--item">ĐĐKD: 0200460420 do Sở kế hoạch đầu tư Hải Phòng cấp ngày 11/04/2002</div>
+                                <div class="footer_des--item">ĐĐKD: 0200460420 do Sở kế hoạch đầu tư Hải Phòng cấp ngày 11/04/2002
+                                </div>
                                 <div class="footer_des--item"><i class="far fa-map-marker-alt me-2"></i>Địa chỉ: Km15 Quốc Lộ 5 - An Hưng - An Dương - Hải Phòng</div>
                             </div>
                             <div class="col-lg-4 col-md-6 detail_contact col-12 text-center">
                                 <h3 class="footer_title">Hotline hỗ trợ</h3>
                                 <div class="footer_des--item"><i class="far fa-phone-alt me-2 fa-rotate-90"></i>Hotline: 1900.6628 Fax: 02253.290.686</div>
-                                <div class="footer_des--item"><i class="fas fa-envelope me-2"></i>E-mail: tuananh@tuananh.vn </div>
+                                <div class="footer_des--item"><i class="fas fa-envelope me-2"></i>E-mail: tuananh@tuananh.vn
+                                </div>
                             </div>
                             <div class="col-lg-3 col-md-6 social_contact col-12 text-center">
                                 <h3 class="footer_title">kết nối chúng tôi qua
@@ -1528,6 +1322,7 @@
     <script src="./assets/src/vendors/js/jquery-3.6.0.js"></script>
     <script src="./assets/src/vendors/js/bootstrap.js"></script>
     <script src="./assets/src/vendors/js/owl.carousel.js"></script>
+    <script src="./assets/src/vendors/js/wow.js"></script>
     <script src="./assets/src/public/js/main.js"></script>
 </body>
 

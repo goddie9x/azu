@@ -145,6 +145,11 @@ a {
     color: #fd4a12;
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "";
+    font-family: 'Font Awesome 6 Pro';
+}
+
 
 /*==============================BANNER_MAIN===========================*/
 

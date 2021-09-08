@@ -743,6 +743,13 @@ a {
         height: 80vh;
         overflow-y: scroll;
     }
+    .products_opts.active::-webkit-scrollbar {
+        width: 5px;
+        background-color: #999999;
+    }
+    .products_opts.active::-webkit-scrollbar-thumb {
+        background-color: #f68e2e;
+    }
 }
 
 @media(max-width:767px) {

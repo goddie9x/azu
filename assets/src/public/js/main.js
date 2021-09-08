@@ -137,3 +137,20 @@ function fixedHeader(elements, breakpoint, classAdd = "fixed-top", elementDepend
     }
 }
 new WOW().init();
+$.fn.toggleText = function(text1, text2) {
+    if (this.text() == text1)
+        this.text(text2);
+    else this.text(text1);
+    return;
+}
+$('.toggle_expander').click(function(e) {
+    let currentToggle = $(e.target);
+    currentToggle.toggleText('+', '-');
+    currentToggle.parent().next().toggleClass('active');
+});
+$('.filter_icon').click(function(e) {
+    $('.products_opts').addClass('active');
+});
+$('.close_filter').click(function(e) {
+    $('.products_opts').removeClass('active');
+})

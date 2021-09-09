@@ -1,5 +1,11 @@
+import {
+    Carousel,
+    Fancybox,
+    Panzoom
+} from '../../vendors/js/fancybox.esm.js';
+
 $(document).ready(function() {
-    windowWidth = document.documentElement.clientWidth;
+    let windowWidth = document.documentElement.clientWidth;
     if (windowWidth > 992) {
         fixedHeader('.header_bottom', 200);
     } else {
@@ -153,4 +159,37 @@ $('.filter_icon').click(function(e) {
 });
 $('.close_filter').click(function(e) {
     $('.products_opts').removeClass('active');
-})
+});
+let mainCarouselContainer = document.querySelector("#mainCarousel");
+if (mainCarouselContainer) {
+
+    const mainCarousel = new Carousel(mainCarouselContainer, {
+        Dots: false,
+        slidesPerPage: 1,
+        on: {
+            createSlide: (carousel, slide) => {
+                slide.Panzoom = new Panzoom(slide.$el.querySelector(".panzoom"), {
+                    panOnlyZoomed: true,
+                    resizeParent: true,
+                });
+            },
+            deleteSlide: (carousel, slide) => {
+                if (slide.Panzoom) {
+                    slide.Panzoom.destroy();
+                    slide.Panzoom = null;
+                }
+            },
+        },
+    });
+
+    const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+        Sync: {
+            target: mainCarousel,
+        },
+        Dots: false,
+        click: true,
+        center: false,
+        infinite: false,
+        slidesPerPage: 1,
+    });
+}

@@ -9,6 +9,7 @@
     <title>F web</title>
     <link rel="stylesheet" href="./assets/src/vendors/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/src/vendors/css/all.css">
+    <link rel="stylesheet" href="./assets/src/vendors/css/fancybox.css">
     <link rel="stylesheet" href="./assets/src/vendors/css/animate.css">
     <link rel="stylesheet" href="./assets/src/vendors/css/owl.carousel.css">
     <link rel="stylesheet" href="./assets/src/public/css/style.css">
@@ -99,25 +100,35 @@
                                             <i class="far fa-bars me-2"></i> Danh mục sản phẩm
                                         </div>
                                         <ul class="dropdown-menu" aria-labelledby="catalogue">
-                                            <li><a class="dropdown-item" href="./san-pham-1">Sản phẩm 1</a></li>
+                                            <li class="sec_nav"><a class="dropdown-item " href="./san-pham-1">Sản phẩm
+                                                    1</a>
+                                                <ul class="sub_menu">
+                                                    <li class="sub_menu--item"><a href="./san-pham-a">sắp me nu 1</a>
+                                                    </li>
+                                                    <li class="sub_menu--item"><a href="./san-pham-b">sắp me nu 2</a>
+                                                    </li>
+                                                    <li class="sub_menu--item"><a href="./san-pham-c">sắp me nu 3</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                             <li><a class="dropdown-item" href="./san-pham-2">Sản phẩm 2</a></li>
                                             <li><a class="dropdown-item" href="./san-pham-3">Sản phẩm 3</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">trang chủ</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">trang chủ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">giới thiệu</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">giới thiệu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">sản phẩm</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">sản phẩm</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">tin tức</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">tin tức</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">liên hệ</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">liên hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -139,13 +150,260 @@
                 </div>
             </section>
             <section>
-                <div class="funiture_arc wow slideInRight family_fur product_section--type2">
+                <div class="funiture_arc wow slideInRight fur_detail product_section--type2">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-9 col-12 product_grid mt-4 row">
+                            <div class="col-lg-9 col-12 row">
+                                <div class="col-lg-7 col-12">
+                                    <h1 class="mt-12 mb-8 px-6text-lg md:text-2xl font-semibold">
+                                        Nội thất phòng khách - KataHome
+                                    </h1>
+                                    <div class="sub-title">
+                                        QTS:<span class="unknown">(Đang cập nhật...)</span>Thương hiệu:<span class="brand">Katahome nội thất</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12 d-flex">
+                                    <div class="cemter_title text-uppercase border-gray">
+                                        <i class="far fa-dot-circle "></i>dành cho khách lẻ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 bg-gray text-uppercase">
+                                dành cho khách buôn <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9 col-12 product_details mt-4 ">
 
+                                <div class="row">
+                                    <div class="col-lg-7 col-12 h-max-content">
+                                        <div id="mainCarousel" class="carousel mb-2 max-w-xl mx-auto">
+                                            <div class="carousel__slide">
+                                                <div class="panzoom">
+                                                    <img class="panzoom__content" src="./assets/src/public/img/image_detail--0.png" />
+                                                </div>
+                                            </div>
+                                            <div class="carousel__slide">
+                                                <div class="panzoom">
+                                                    <img class="panzoom__content" src="./assets/src/public/img/news_img--1.png" />
+                                                </div>
+                                            </div>
+                                            <div class="carousel__slide">
+                                                <div class="panzoom">
+                                                    <img class="panzoom__content" src="./assets/src/public/img/news_img--2.png" />
+                                                </div>
+                                            </div>
+                                            <div class="carousel__slide">
+                                                <div class="panzoom">
+                                                    <img class="panzoom__content" src="./assets/src/public/img/news_img--3.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="thumbCarousel" class="carousel max-w-xl mx-auto">
+                                            <div class="carousel__slide">
+                                                <img class="panzoom__content" src="./assets/src/public/img/image_detail--0.png" />
+                                            </div>
+                                            <div class="carousel__slide">
+                                                <img class="panzoom__content" src="./assets/src/public/img/news_img--1.png" />
+                                            </div>
+                                            <div class="carousel__slide">
+                                                <img class="panzoom__content" src="./assets/src/public/img/news_img--2.png" />
+                                            </div>
+                                            <div class="carousel__slide">
+                                                <img class="panzoom__content" src="./assets/src/public/img/news_img--3.png" />
+                                            </div>
+                                        </div>
+                                        <ul class="commit">
+                                            <li>Chúng tôi <span class="text-red">có gì khác biệt</span> để bạn lựa chọn
+                                            </li>
+                                            <li><i class="fas fa-check"></i>Mang mẫu tư vấn miễn phí tại nhà 8h00 - 20h00
+                                            </li>
+                                            <li><i class="fas fa-check"></i>Hơn 1000+ mẫu mã độc quyền</li>
+                                            <li><i class="fas fa-check"></i>Thi công ngay sau 48h </li>
+                                            <li><i class="fas fa-check"></i>Ship hàng miễn phí toàn quốc với đơn từ 1,5 triệu
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-5 col-12 h-max-content">
+                                        <div class="price">
+                                            199,050,000₫
+                                        </div>
+                                        <div class="title-promotion">
+                                            <i class="fas fa-gift text-uppercase"></i>khuyến mãi
+                                        </div>
+                                        <div class="content-promotion">
+                                            <li><i class="fas fa-chevron-right"></i>Phụ kiện nội thất: Miễn phí</li>
+                                            <li><i class="fas fa-chevron-right"></i>Tư vấn tại nhà tại Hà Nội, Hồ Chí Minh: Miễn phí</li>
+                                            <li><i class="fas fa-chevron-right"></i>Lắp đặt siêu tốc 48h: Miễn phí</li>
+                                        </div>
+                                        <div class="more_details d-flex flex-wrap">
+                                            <ul class="col-lg-6 col-12 more_details--des">
+                                                <li>Chất liệu: Gỗ tự nhiên</li>
+                                                <li>Bảo hành: 10 năm</li>
+                                                <li>Đặc tính: Chống mối mọt, không hấp thụ chất bẩn, dễ vệ sinh</li>
+                                            </ul>
+                                            <ul class="col-lg-6 col-12 more_details--des">
+                                                <li>Xuất xứ: Việt Nam</li>
+                                                <li>Màu sắc: 80% - 100%</li>
+                                                <li>Giá tính theo: mét vuông</li>
+                                                <li>Tình trạng: Còn hàng</li>
+                                            </ul>
+                                            <a href="" class="col-lg-6 col-12 btn submit">
+                                                <div class="btn_title text-uppercase">Mua ngay</div>
+                                                <div class="btn_des">Giao hàng trên toàn quốc</div>
+                                            </a>
+                                            <a href="" class="col-lg-6 col-12 btn submit">
+                                                <div class="btn_title text-uppercase">Tư vấn tại nhà</div>
+                                                <div class="btn_des">Mang mẫu tư vấn miễn phí</div>
+                                            </a>
+                                            <div class="add_cart btn get_phone d-flex">
+                                                <div class="add_cart--title text-uppercase col-lg-4 col-12">Đặt hàng ngay
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control col-lg-8 col-12" aria-label="Amount (to the nearest dollar)" placeholder="Nhập số điện thoại">
+                                                    <span class="input-group-text">Gửi<i
+                                                            class="fas fa-paper-plane"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="show_room">
+                                                <div class="show_room--title text-uppercase">
+                                                    hệ thống show room chính hãng
+                                                </div>
+                                                <ul class="show_room--locate">
+                                                    <li><i class="far fa-map-marker-alt"></i>Hà Nội</li>
+                                                    <li>Cơ sở 1: 27-29, Ngõ 307 Nguyễn Xiển, Thanh Xuân, HN</li>
+                                                    <li>Cơ sở 2: 534A Minh Khai, Hai Bà Trưng, HN</li>
+                                                    <li>Cơ sở 3: 606 Nguyễn Văn Cừ, Long Biên, HN</li>
+                                                    <li><i class="far fa-map-marker-alt"></i>HCM - 1182 tỉnh lộ 10, Phường Tân Tạo, Bình Tân, TP.HCM</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main_product-des col-12">
+                                    <ul class="nav nav-tabs justify-content-center " id="myTab" role="tablist">
+                                        <li class="nav-item bg-gray text-uppercase" role="presentation">
+                                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">mô tả</button>
+                                        </li>
+                                        <li class="nav-item bg-gray text-uppercase" role="presentation">
+                                            <button class="nav-link" id="option_tab-tab" data-bs-toggle="tab" data-bs-target="#option_tab" type="button" role="tab" aria-controls="option_tab" aria-selected="false">tab tùy chỉnh</button>
+                                        </li>
+                                        <li class="nav-item bg-gray text-uppercase" role="presentation">
+                                            <button class="nav-link" id="rate_pro-tab" data-bs-toggle="tab" data-bs-target="#rate_pro" type="button" role="tab" aria-controls="rate_pro" aria-selected="false">đánh giá</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                            <p>Những mẫu cửa sổ nhôm kính đẹp và sang trọng nhất Phải khẳng định rằng cửa nhôm kính đang đóng góp một phần không nhỏ vào góc nhìn văn minh trong thời đại và sự thay đổi trong kiểu dáng kiến trúc nhà ở hiện
+                                                nay. Với các mẫu cửa sổ nhôm kính đẹp luôn mang đến cảm hứng mới cho việc sáng tạo ra những bản thiết kế phù hợp với không gian hiên đại. Nếu như cửa gỗ giúp con người ta hướng đến sự hoài cổ dành cho kiểu
+                                                kiến trúc cung đình thì sự kết hợp giữa nhôm và kính lại mang đến sự sang trọng và sức mạnh tổng thể cho ngôi nhà. Các mẫu cửa nhôm đẹp không chỉ được đánh giá cao về mẫu mã mà còn được đánh giá cao về chất
+                                                lượng ở tất cả các dòng nhôm như nhôm Xingfa nhập khẩu, PMI, nhôm Đông Anh hay Việt Pháp. Đơn vị thi công cửa nhôm luôn cải tiến và cập nhật xu hướng để cho ra mắt những mẫu cửa đẹp. Một số mẫu cửa sổ nhôm
+                                                kính đẹp mang phong cách Châu Âu đẹp phù hợp cho các mẫu cửa sổ nhà đất, nhà phố và biệt thự. Hãy cùng tham khảo để lên ý tưởng cho ngôi nhà thân yêu của mình. Cửa sổ nhôm kính mở hất phía trên Mẫu cửa sổ
+                                                và ô thoáng sử dụng nhôm mầu tối kết hợp theo màu của ngôi nhà làm nổi bật không gian bên ngoài.</p>
+                                            <img class="w-100" src="./assets/src/public/img/des_img-1.png" alt="ảnh chi tiết sản phẩm">
+                                            <p>Những mẫu cửa sổ nhôm kính đẹp và sang trọng nhất Phải khẳng định rằng cửa nhôm kính đang đóng góp một phần không nhỏ vào góc nhìn văn minh trong thời đại và sự thay đổi trong kiểu dáng kiến trúc nhà ở hiện
+                                                nay. Với các mẫu cửa sổ nhôm kính đẹp luôn mang đến cảm hứng mới cho việc sáng tạo ra những bản thiết kế phù hợp với không gian hiên đại. Nếu như cửa gỗ giúp con người ta hướng đến sự hoài cổ dành cho kiểu
+                                                kiến trúc cung đình thì sự kết hợp giữa nhôm và kính lại mang đến sự sang trọng và sức mạnh tổng thể cho ngôi nhà. Các mẫu cửa nhôm đẹp không chỉ được đánh giá cao về mẫu mã mà còn được đánh giá cao về chất
+                                                lượng ở tất cả các dòng nhôm như nhôm Xingfa nhập khẩu, PMI, nhôm Đông Anh hay Việt Pháp. Đơn vị thi công cửa nhôm luôn cải tiến và cập nhật xu hướng để cho ra mắt những mẫu cửa đẹp. Một số mẫu cửa sổ nhôm
+                                                kính đẹp mang phong cách Châu Âu đẹp phù hợp cho các mẫu cửa sổ nhà đất, nhà phố và biệt thự. Hãy cùng tham khảo để lên ý tưởng cho ngôi nhà thân yêu của mình. Cửa sổ nhôm kính mở hất phía trên Mẫu cửa sổ
+                                                và ô thoáng sử dụng nhôm mầu tối kết hợp theo màu của ngôi nhà làm nổi bật không gian bên ngoài.</p>
+                                            <img class="w-100" src="./assets/src/public/img/des_img-2.png" alt="ảnh chi tiết sản phẩm">
+                                            <p>
+                                                Những mẫu cửa sổ nhôm kính đẹp và sang trọng nhất Phải khẳng định rằng cửa nhôm kính đang đóng góp một phần không nhỏ vào góc nhìn văn minh trong thời đại và sự thay đổi trong kiểu dáng kiến trúc nhà ở hiện nay. Với các mẫu cửa sổ nhôm kính đẹp luôn mang
+                                                đến cảm hứng mới cho việc sáng tạo ra những bản thiết kế phù hợp với không gian hiên đại. Nếu như cửa gỗ giúp con người ta hướng đến sự hoài cổ dành cho kiểu kiến trúc cung đình thì sự kết hợp giữa nhôm
+                                                và kính lại mang đến sự sang trọng và sức mạnh tổng thể cho ngôi nhà. Các mẫu cửa nhôm đẹp không chỉ được đánh giá cao về mẫu mã mà còn được đánh giá cao về chất lượng ở tất cả các dòng nhôm như nhôm Xingfa
+                                                nhập khẩu, PMI, nhôm Đông Anh hay Việt Pháp. Đơn vị thi công cửa nhôm luôn cải tiến và cập nhật xu hướng để cho ra mắt những mẫu cửa đẹp. Một số mẫu cửa sổ nhôm kính đẹp mang phong cách Châu Âu đẹp phù hợp
+                                                cho các mẫu cửa sổ nhà đất, nhà phố và biệt thự. Hãy cùng tham khảo để lên ý tưởng cho ngôi nhà thân yêu của mình. Cửa sổ nhôm kính mở hất phía trên Mẫu cửa sổ và ô thoáng sử dụng nhôm mầu tối kết hợp theo
+                                                màu của ngôi nhà làm nổi bật không gian bên ngoài.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane fade" id="option_tab" role="tabpanel" aria-labelledby="option_tab-tab">...</div>
+                                        <div class="tab-pane fade" id="rate_pro" role="tabpanel" aria-labelledby="rate_pro-tab">...</div>
+                                    </div>
+                                    <div class="comment col-12">
+                                        <div class="comment_type">
+                                            <a href="https://facebook.com">Bình luận bằng tài khoản facebook</a>
+                                            <a href="https://google.com">Bình luận bằng tài khoản Google</a>
+                                        </div>
+                                        <div class="comment_options d-flex justify-content-between align-items-center">
+                                            <div class="count_comment">0 bình luận</div>
+                                            <div class="comment_sort d-flex ">
+                                                <label for="comment_sort--select ">Xắp xếp theo</label>
+                                                <select class="form-select" id="comment_sort--select">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="main_comment row">
+                                            <div class="input-group">
+                                                <span class="input-group-text avatar">With textarea</span>
+                                                <textarea class="form-control comment_content" aria-label="With textarea"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="plugin_comment">
+                                            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i> Plugin
+                                                bình luận trên Facebook</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-3">
+                                <ul class="lam_info--vcl">
+                                    <h3 class="title_right">
+                                        <i class="far fa-dot-circle "></i>bán hàng cùng
+                                    </h3>
+                                    <ul class="conme_no">
+                                        <li>
+                                            <a href="./index.html" class="d-flex align-items-center"><i class="fas fa-circle"></i>
+                                                <div class="share_contain">
+                                                    <div class="title-share">Khách cũ giới thiệu khách mới</div>
+                                                    <div class="share-des">Thưởng từ 500,000 đến 2000,0000</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./index.html" class="d-flex align-items-center"><i class="fas fa-circle"></i>
+                                                <div class="share_contain">
+                                                    <div class="title-share">Dành cho cộng tác viên</div>
+                                                    <div class="share-des">Giới thiếu khách & nhận hoa hồng</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./index.html" class="d-flex align-items-center"><i class="fas fa-circle"></i>
+                                                <div class="share_contain">
+                                                    <div class="title-share">Nhà thiết kế nội thất, kiến trúc sư</div>
+                                                    <div class="share-des">Đưa khác đến mua thưởng từ 500,000 - 5.000.000đ</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="bom_nhin">
+                                        <li>
+                                            <a href="./index.html"><i class="far fa-phone-alt me-2 fa-rotate-90"></i>
+                                                Hotline: <span class="phone-red fw-bold">0859.586.446</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="./index.html"><i class="fab fa-facebook-f"></i>inbox facebook</a>
+                                        </li>
+                                        <li>
+                                            <a href="./index.html"><i class="fas fa-gift text-uppercase"></i>Phiếu giảm
+                                                giá</a>
+                                        </li>
+                                        <li>
+                                            <a href="./index.html"><i class="far fa-map-marker-alt"></i> Chỉ đường</a>
+                                        </li>
+                                        <li>
+                                            <a href="./index.html"></a>
+                                        </li>
+                                    </ul>
+                                </ul>
                                 <ul class="products_opts">
                                     <h3 class="title_right">
                                         Danh mục
@@ -236,37 +494,45 @@
                                     <a href="news.html" class="card news_item">
                                         <img src="./assets/src/public/img/news_img--1.png" class="card-img-top" alt="news image">
                                         <div class="card-body">
-                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
+                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni
+                                            </h4>
                                             <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
                                             </div>
-                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
+                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...]
+                                            </p>
                                         </div>
                                     </a>
                                     <a href="news.html" class="card news_item">
                                         <img src="./assets/src/public/img/news_img--2.png" class="card-img-top" alt="news image">
                                         <div class="card-body">
-                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
+                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni
+                                            </h4>
                                             <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
                                             </div>
-                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
+                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...]
+                                            </p>
                                         </div>
                                     </a>
                                     <a href="news.html" class="card news_item">
                                         <img src="./assets/src/public/img/news_img--3.png" class="card-img-top" alt="news image">
                                         <div class="card-body">
-                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
+                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni
+                                            </h4>
                                             <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
                                             </div>
-                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
+                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...]
+                                            </p>
                                         </div>
                                     </a>
                                     <a href="news.html" class="card news_item">
                                         <img src="./assets/src/public/img/news_img--4.png" class="card-img-top" alt="news image">
                                         <div class="card-body">
-                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni </h4>
+                                            <h4 class="new_item--title">Nội thất nhập khẩu - bàn ăn thông minh - Luxfuni
+                                            </h4>
                                             <div class="date_create"><i class="fad fa-calendar-alt me-2"></i>Tuesday, 26/12/2020
                                             </div>
-                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...] </p>
+                                            <p class="news_content">Ngày nay ở các thành phố lớn như Hà Nội và TP. Hồ Chí Minh dân cư ngày càng đông đúc, diện tích đất ngày càng eo hẹp [...]
+                                            </p>
                                         </div>
                                     </a>
                                 </div>
@@ -590,7 +856,7 @@
     <script src="./assets/src/vendors/js/bootstrap.js"></script>
     <script src="./assets/src/vendors/js/owl.carousel.js"></script>
     <script src="./assets/src/vendors/js/wow.js"></script>
-    <script src="./assets/src/public/js/main.js"></script>
+    <script type="module" src="./assets/src/public/js/main.js"></script>
 </body>
 
 </html>
